@@ -1,3 +1,19 @@
 def oxford_comma(array)
-
+  # case array.size 
+  # when 
+  
+  if array.size == 2 
+    #adds 'and' b/t elements when given a 2 element array
+    array.join(" and ")
+  elsif array.size > 2 
+  # adds commas plus a final 'and' when given a 3-element array 1, 2, and 3 
+    oxford_string = array.join(", ")
+    
+  #oxford_comma correctly formats arrays of lengths greater than three
+  else 
+    array.join
+  end 
+    
+  
 end
+
